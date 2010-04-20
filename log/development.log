@@ -1,0 +1,605 @@
+
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+Google geocoding. Address: 31 Cedar Hill PL NE, Albuquerque, NM. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>31 Cedar Hill PL NE, Albuquerque, NM</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>Albuquerque, NM, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Bernalillo</SubAdministrativeAreaName><Locality><LocalityName>Albuquerque</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.2304503" south="34.9382699" east="-106.3950179" west="-106.9072555" />
+    </ExtendedData>
+    <Point><coordinates>-106.6511367,35.0844909,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google geocoding. Address: 791 Sequoia Trail, Maitland, FL. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>791 Sequoia Trail, Maitland, FL</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>791 Sequoia Trail, Maitland, FL 32751, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Orange</SubAdministrativeAreaName><Locality><LocalityName>Maitland</LocalityName><Thoroughfare><ThoroughfareName>791 Sequoia Trail</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>32751</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.6398066" south="28.6335114" east="-81.3464704" west="-81.3527656" />
+    </ExtendedData>
+    <Point><coordinates>-81.3496180,28.6366590,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google reverse-geocoding. LL: 37.792821,-122.393992. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>37.792821,-122.393992</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>36-98 Mission St, San Francisco, CA 94105, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>36-98 Mission St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94105</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7960254" south="37.7897302" east="-122.3904922" west="-122.3967875" />
+    </ExtendedData>
+    <Point><coordinates>-122.3938655,37.7927228,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p2">
+    <address>South Beach, San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><DependentLocality><DependentLocalityName>South Beach</DependentLocalityName></DependentLocality></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7957000" south="37.7775290" east="-122.3876340" west="-122.4034819" />
+    </ExtendedData>
+    <Point><coordinates>-122.3929225,37.7873921,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p3">
+    <address>San Francisco, CA 94105, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><PostalCode><PostalCodeNumber>94105</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.8001820" south="37.7824490" east="-122.3843420" west="-122.4030280" />
+    </ExtendedData>
+    <Point><coordinates>-122.3943387,37.7905304,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p4">
+    <address>Central East, San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><DependentLocality><DependentLocalityName>Central East</DependentLocalityName></DependentLocality></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7957000" south="37.7311310" east="-122.3767159" west="-122.4363820" />
+    </ExtendedData>
+    <Point><coordinates>-122.4070834,37.7615966,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p5">
+    <address>San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.9298239" south="37.6398299" east="-122.2817800" west="-123.1738250" />
+    </ExtendedData>
+    <Point><coordinates>-122.5146439,37.7618219,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p6">
+    <address>San Francisco, California, USA</address>
+    <AddressDetails Accuracy="3" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.9298239" south="37.6398299" east="-122.2817800" west="-123.1738250" />
+    </ExtendedData>
+    <Point><coordinates>-122.5146439,37.7618219,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p7">
+    <address>San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.8120000" south="37.7034000" east="-122.3482000" west="-122.5270000" />
+    </ExtendedData>
+    <Point><coordinates>-122.4194155,37.7749295,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p8">
+    <address>California, USA</address>
+    <AddressDetails Accuracy="2" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="42.0095169" south="32.5288320" east="-114.1312110" west="-124.4820030" />
+    </ExtendedData>
+    <Point><coordinates>-119.4179324,36.7782610,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p9">
+    <address>United States</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="71.5388000" south="18.7763000" east="-66.8850750" west="170.5957000" />
+    </ExtendedData>
+    <Point><coordinates>-95.7128910,37.0902400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google reverse-geocoding. LL: 27.792821,-160.393992. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>27.792821,-160.393992</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: 
+Google reverse-geocoding. LL: 28.6366,-81.3496. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>28.636600,-81.349600</name>
+  <Status>
+    <code>602</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+Google was unable to geocode address: 
+Google geocoding. Address: 31 Cedar Hill PL NE, Albuquerque, NM. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>31 Cedar Hill PL NE, Albuquerque, NM</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>31 Cedar Hill Pl NE, Albuquerque, NM 87122, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Bernalillo</SubAdministrativeAreaName><Locality><LocalityName>Albuquerque</LocalityName><Thoroughfare><ThoroughfareName>31 Cedar Hill Pl NE</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>87122</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.1906776" south="35.1843824" east="-106.4808254" west="-106.4871206" />
+    </ExtendedData>
+    <Point><coordinates>-106.4839730,35.1875300,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google reverse-geocoding. LL: 28.6366,-81.3496. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>28.636600,-81.349600</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>791 Sequoia Trail, Maitland, FL 32751, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Orange</SubAdministrativeAreaName><Locality><LocalityName>Maitland</LocalityName><Thoroughfare><ThoroughfareName>791 Sequoia Trail</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>32751</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.6398066" south="28.6335114" east="-81.3464704" west="-81.3527656" />
+    </ExtendedData>
+    <Point><coordinates>-81.3496180,28.6366590,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p2">
+    <address>Maitland, FL, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Orange</SubAdministrativeAreaName><Locality><LocalityName>Maitland</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.6405410" south="28.6103770" east="-81.3282620" west="-81.4106400" />
+    </ExtendedData>
+    <Point><coordinates>-81.3631244,28.6277767,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p3">
+    <address>Maitland, FL 32751, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Seminole</SubAdministrativeAreaName><Locality><LocalityName>Maitland</LocalityName><PostalCode><PostalCodeNumber>32751</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.6523380" south="28.6097290" east="-81.3193730" west="-81.4132980" />
+    </ExtendedData>
+    <Point><coordinates>-81.3674389,28.6366753,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p4">
+    <address>Orlando, FL, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Orange</SubAdministrativeAreaName><Locality><LocalityName>Orlando</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.6408510" south="28.3478860" east="-81.2318890" west="-81.4987939" />
+    </ExtendedData>
+    <Point><coordinates>-81.3839326,28.5392946,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p5">
+    <address>Orange, Florida, USA</address>
+    <AddressDetails Accuracy="3" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Orange</SubAdministrativeAreaName></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="28.7860889" south="28.3467250" east="-80.8629079" west="-81.6585990" />
+    </ExtendedData>
+    <Point><coordinates>-81.2518833,28.4844995,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p6">
+    <address>Florida, USA</address>
+    <AddressDetails Accuracy="2" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>FL</AdministrativeAreaName></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="31.0009680" south="24.3963079" east="-79.9743060" west="-87.6348960" />
+    </ExtendedData>
+    <Point><coordinates>-81.5157535,27.6648274,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p7">
+    <address>United States</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="71.5388000" south="18.7763000" east="-66.8850750" west="170.5957000" />
+    </ExtendedData>
+    <Point><coordinates>-95.7128910,37.0902400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google reverse-geocoding. LL: 35.18753,-106.483973. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>35.187530,-106.483973</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>31 Cedar Hill Pl NE, Albuquerque, NM 87122, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Bernalillo</SubAdministrativeAreaName><Locality><LocalityName>Albuquerque</LocalityName><Thoroughfare><ThoroughfareName>31 Cedar Hill Pl NE</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>87122</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.1906776" south="35.1843824" east="-106.4808254" west="-106.4871206" />
+    </ExtendedData>
+    <Point><coordinates>-106.4839730,35.1875300,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p2">
+    <address>Albuquerque, NM 87122, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Sandoval</SubAdministrativeAreaName><Locality><LocalityName>Albuquerque</LocalityName><PostalCode><PostalCodeNumber>87122</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.3926860" south="35.1559940" east="-106.4204450" west="-106.7374520" />
+    </ExtendedData>
+    <Point><coordinates>-106.4759262,35.1997359,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p3">
+    <address>Albuquerque, NM, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Bernalillo</SubAdministrativeAreaName><Locality><LocalityName>Albuquerque</LocalityName></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.2181409" south="34.9466139" east="-106.4139529" west="-106.8053920" />
+    </ExtendedData>
+    <Point><coordinates>-106.5819789,35.0672286,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p4">
+    <address>Bernalillo, New Mexico, USA</address>
+    <AddressDetails Accuracy="3" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Bernalillo</SubAdministrativeAreaName></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="35.2196390" south="34.8690239" east="-106.1495750" west="-107.1961700" />
+    </ExtendedData>
+    <Point><coordinates>-106.6291304,35.0177854,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p5">
+    <address>New Mexico, USA</address>
+    <AddressDetails Accuracy="2" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>NM</AdministrativeAreaName></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.0002930" south="31.3321720" east="-103.0019640" west="-109.0501730" />
+    </ExtendedData>
+    <Point><coordinates>-105.0323635,34.9727305,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p6">
+    <address>United States</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="71.5388000" south="18.7763000" east="-66.8850750" west="170.5957000" />
+    </ExtendedData>
+    <Point><coordinates>-95.7128910,37.0902400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (148.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-04-18 22:21:42) [GET]
+Rendering locations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/locations]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:29:43) [GET]
+
+ActionController::RoutingError (No route matches "/lookup_geocodes" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/lookup_geocodes/show_google_map" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 22:31:08) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+NameError (uninitialized constant SandboxController::XMLRPC):
+  app/controllers/sandbox_controller.rb:43:in `get_geocode'
+  app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+  app/controllers/sandbox_controller.rb:14:in `each'
+  app/controllers/sandbox_controller.rb:14:in `each_with_index'
+  app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+
+Rendered rescues/_trace (99.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-18 22:31:52) [GET]
+Rendering sandbox/show_google_map
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #26 of app/views/sandbox/show_google_map.html.erb:
+23:             map.addControl(new GSmallMapControl());
+24:             map.centerAndZoom(new GPoint(-122.443882, 37.769079), 5);
+25:             
+26:             <%@places.each do |place|%>
+27:             var point = new GPoint(<%=place[:longitude]%>,<%=place[:latitude]%>);
+28:             var marker = createMarker(point,'<div><%=h place[:description]%></div>')
+29:             map.addOverlay(marker);
+
+    app/views/sandbox/show_google_map.html.erb:26
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 22:38:02) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+NameError (uninitialized constant SandboxController::XMLRPC):
+  app/controllers/sandbox_controller.rb:43:in `get_geocode'
+  app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+  app/controllers/sandbox_controller.rb:14:in `each'
+  app/controllers/sandbox_controller.rb:14:in `each_with_index'
+  app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 22:48:58) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+NameError (uninitialized constant SandboxController::XMLRPC):
+  app/controllers/sandbox_controller.rb:43:in `get_geocode'
+  app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+  app/controllers/sandbox_controller.rb:14:in `each'
+  app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 22:59:19) [GET]
+
+SyntaxError (/Users/heileman/Projects-Proposals/Modus Operandi/Smashup/mashups/mashup/app/controllers/sandbox_controller.rb:46: syntax error, unexpected ']', expecting '}'
+...lat, :longitude => result.lng]}
+                              ^):
+  
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 22:59:35) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+NameError (uninitialized constant SandboxController::MultiGeocoder):
+  app/controllers/sandbox_controller.rb:43:in `get_geocode'
+  app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+  app/controllers/sandbox_controller.rb:14:in `each'
+  app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-18 23:04:10) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+Google geocoding. Address: 555 Irving, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>555 Irving, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>555 Irving St, San Francisco, CA 94122, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>555 Irving St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94122</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7670816" south="37.7607864" east="-122.4607244" west="-122.4670196" />
+    </ExtendedData>
+    <Point><coordinates>-122.4638720,37.7639340,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x1033161a0 @lat=37.763934, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="555 Irving St", @full_address="555 Irving St, San Francisco, CA 94122, USA", @suggested_bounds=#<Geokit::Bounds:0x103252688 @ne=#<Geokit::LatLng:0x1032524f8 @lat=37.7670816, @lng=-122.4607244>, @sw=#<Geokit::LatLng:0x1032525c0 @lat=37.7607864, @lng=-122.4670196>>, @zip="94122", @precision="address", @all=[#<Geokit::GeoLoc:0x1033161a0 ...>], @accuracy=8, @lng=-122.463872, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 1401 Valencia St, San Francisco, CA
+Google geocoding. Address: 1401 Valencia St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>1401 Valencia St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>1401 Valencia St, San Francisco, CA 94110, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>1401 Valencia St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94110</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7535386" south="37.7472434" east="-122.4170014" west="-122.4232966" />
+    </ExtendedData>
+    <Point><coordinates>-122.4201490,37.7503910,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x1036c82f8 @lat=37.750391, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="1401 Valencia St", @full_address="1401 Valencia St, San Francisco, CA 94110, USA", @suggested_bounds=#<Geokit::Bounds:0x1035e6650 @ne=#<Geokit::LatLng:0x1035e6448 @lat=37.7535386, @lng=-122.4170014>, @sw=#<Geokit::LatLng:0x1035e6560 @lat=37.7472434, @lng=-122.4232966>>, @zip="94110", @precision="address", @all=[#<Geokit::GeoLoc:0x1036c82f8 ...>], @accuracy=8, @lng=-122.420149, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 501 Cole St, San Francisco, CA
+Google geocoding. Address: 501 Cole St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>501 Cole St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>501 Cole St, San Francisco, CA 94117, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>501 Cole St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94117</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7734236" south="37.7671284" east="-122.4475184" west="-122.4538136" />
+    </ExtendedData>
+    <Point><coordinates>-122.4506660,37.7702760,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x1035a1eb0 @lat=37.770276, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="501 Cole St", @full_address="501 Cole St, San Francisco, CA 94117, USA", @suggested_bounds=#<Geokit::Bounds:0x1034bf7e0 @ne=#<Geokit::LatLng:0x1034bf650 @lat=37.7734236, @lng=-122.4475184>, @sw=#<Geokit::LatLng:0x1034bf718 @lat=37.7671284, @lng=-122.4538136>>, @zip="94117", @precision="address", @all=[#<Geokit::GeoLoc:0x1035a1eb0 ...>], @accuracy=8, @lng=-122.450666, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 150 Church St, San Francisco, CA
+Google geocoding. Address: 150 Church St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>150 Church St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>150 Church St, San Francisco, CA 94114, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>150 Church St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94114</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7718103" south="37.7655151" east="-122.4259103" west="-122.4322056" />
+    </ExtendedData>
+    <Point><coordinates>-122.4290676,37.7686621,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x103483538 @lat=37.7686621, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="150 Church St", @full_address="150 Church St, San Francisco, CA 94114, USA", @suggested_bounds=#<Geokit::Bounds:0x1033c70e0 @ne=#<Geokit::LatLng:0x1033c6f50 @lat=37.7718103, @lng=-122.4259103>, @sw=#<Geokit::LatLng:0x1033c7018 @lat=37.7655151, @lng=-122.4322056>>, @zip="94114", @precision="address", @all=[#<Geokit::GeoLoc:0x103483538 ...>], @accuracy=8, @lng=-122.4290676, @success=true, @provider="google", @state="CA">
+Completed in 1444ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/lookup_geocodes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-18 23:07:25) [GET]
+Rendering sandbox/show_google_map
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-18 23:13:13) [GET]
+Rendering sandbox/show_google_map
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-18 23:14:00) [GET]
+Rendering sandbox/show_google_map
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-18 23:30:12) [GET]
+Rendering sandbox/show_google_map
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-19 11:07:15) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+Google geocoding. Address: 555 Irving, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>555 Irving, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>555 Irving St, San Francisco, CA 94122, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>555 Irving St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94122</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7670816" south="37.7607864" east="-122.4607244" west="-122.4670196" />
+    </ExtendedData>
+    <Point><coordinates>-122.4638720,37.7639340,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x103289d18 @lat=37.763934, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="555 Irving St", @full_address="555 Irving St, San Francisco, CA 94122, USA", @suggested_bounds=#<Geokit::Bounds:0x1031ce360 @ne=#<Geokit::LatLng:0x1031ce1d0 @lat=37.7670816, @lng=-122.4607244>, @sw=#<Geokit::LatLng:0x1031ce298 @lat=37.7607864, @lng=-122.4670196>>, @zip="94122", @precision="address", @all=[#<Geokit::GeoLoc:0x103289d18 ...>], @accuracy=8, @lng=-122.463872, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 1401 Valencia St, San Francisco, CA
+Google geocoding. Address: 1401 Valencia St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>1401 Valencia St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>1401 Valencia St, San Francisco, CA 94110, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>1401 Valencia St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94110</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7535386" south="37.7472434" east="-122.4170014" west="-122.4232966" />
+    </ExtendedData>
+    <Point><coordinates>-122.4201490,37.7503910,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x10319a010 @lat=37.750391, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="1401 Valencia St", @full_address="1401 Valencia St, San Francisco, CA 94110, USA", @suggested_bounds=#<Geokit::Bounds:0x1030dfd78 @ne=#<Geokit::LatLng:0x1030dfbe8 @lat=37.7535386, @lng=-122.4170014>, @sw=#<Geokit::LatLng:0x1030dfcb0 @lat=37.7472434, @lng=-122.4232966>>, @zip="94110", @precision="address", @all=[#<Geokit::GeoLoc:0x10319a010 ...>], @accuracy=8, @lng=-122.420149, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 501 Cole St, San Francisco, CA
+Google geocoding. Address: 501 Cole St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>501 Cole St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>501 Cole St, San Francisco, CA 94117, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>501 Cole St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94117</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7734236" south="37.7671284" east="-122.4475184" west="-122.4538136" />
+    </ExtendedData>
+    <Point><coordinates>-122.4506660,37.7702760,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x1030aba50 @lat=37.770276, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="501 Cole St", @full_address="501 Cole St, San Francisco, CA 94117, USA", @suggested_bounds=#<Geokit::Bounds:0x102ff17b8 @ne=#<Geokit::LatLng:0x102ff1628 @lat=37.7734236, @lng=-122.4475184>, @sw=#<Geokit::LatLng:0x102ff16f0 @lat=37.7671284, @lng=-122.4538136>>, @zip="94117", @precision="address", @all=[#<Geokit::GeoLoc:0x1030aba50 ...>], @accuracy=8, @lng=-122.450666, @success=true, @provider="google", @state="CA">
+starting geocoder call for address: 150 Church St, San Francisco, CA
+Google geocoding. Address: 150 Church St, San Francisco, CA. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>150 Church St, San Francisco, CA</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>150 Church St, San Francisco, CA 94114, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>150 Church St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94114</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7718103" south="37.7655151" east="-122.4259103" west="-122.4322056" />
+    </ExtendedData>
+    <Point><coordinates>-122.4290676,37.7686621,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Geocode call: #<Geokit::GeoLoc:0x102fbd490 @lat=37.7686621, @province="San Francisco", @city="San Francisco", @country_code="US", @country="USA", @street_address="150 Church St", @full_address="150 Church St, San Francisco, CA 94114, USA", @suggested_bounds=#<Geokit::Bounds:0x10368f688 @ne=#<Geokit::LatLng:0x10368f4f8 @lat=37.7718103, @lng=-122.4259103>, @sw=#<Geokit::LatLng:0x10368f5c0 @lat=37.7655151, @lng=-122.4322056>>, @zip="94114", @precision="address", @all=[#<Geokit::GeoLoc:0x102fbd490 ...>], @accuracy=8, @lng=-122.4290676, @success=true, @provider="google", @state="CA">
+Completed in 1277ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/lookup_geocodes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-19 11:07:32) [GET]
+Rendering sandbox/show_google_map
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
