@@ -5,13 +5,13 @@
 
 development:
  ## http://localhost
- ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
+ http://localhost: ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
+ http://smashup.heroku.com: ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3M
 
 test:
  ## http://localhost
- ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
-
-
+ http://localhost: ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
+ http://smashup.heroku.com: ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3M
 
 production:
 ## thepochisuperstarmegashow.com: ABQIAAAAzMUFFnT9uH0Sfg76Y4kbhTJQa0g3IQ9GZqIMmInSLzwtGDmlRT6e90j135zat56yhJKQlWnkaidDIQ
