@@ -29,7 +29,7 @@ if defined? Geokit
   ## Use this one for http://localhost
 	#Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA'
   ## Use this one for http://smashup.heroku.com
-	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3MQ'
+	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RQ8nda2l8z-oXOZMhvo4DA8FzaARRRSKPZHUIXhquymXIeUWhTYQwCBfA'
     
 	# This is your username and password for geocoder.us.
 	# To use the free service, the value can be set to nil or false.  For 
