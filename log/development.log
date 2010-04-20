@@ -603,3 +603,67 @@ Completed in 1277ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/lookup_g
 Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-19 11:07:32) [GET]
 Rendering sandbox/show_google_map
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-04-19 22:19:03) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+Geocode call: #<Geokit::GeoLoc:0x10347a140 @lng=-122.463872, @full_address="555 Irving St, San Francisco, CA 94122, USA", @suggested_bounds=#<Geokit::Bounds:0x1033bfea8 @sw=#<Geokit::LatLng:0x1033bfde0 @lng=-122.4670196, @lat=37.7607864>, @ne=#<Geokit::LatLng:0x1033bfd18 @lng=-122.4607244, @lat=37.7670816>>, @precision="address", @zip="94122", @accuracy=8, @lat=37.763934, @success=true, @provider="google", @city="San Francisco", @province="San Francisco", @state="CA", @street_address="555 Irving St", @country_code="US", @country="USA", @all=[#<Geokit::GeoLoc:0x10347a140 ...>]>
+starting geocoder call for address: 1401 Valencia St, San Francisco, CA
+Geocode call: #<Geokit::GeoLoc:0x10338bb08 @lng=-122.420149, @full_address="1401 Valencia St, San Francisco, CA 94110, USA", @suggested_bounds=#<Geokit::Bounds:0x1032d1870 @sw=#<Geokit::LatLng:0x1032d17a8 @lng=-122.4232966, @lat=37.7472434>, @ne=#<Geokit::LatLng:0x1032d16e0 @lng=-122.4170014, @lat=37.7535386>>, @precision="address", @zip="94110", @accuracy=8, @lat=37.750391, @success=true, @provider="google", @city="San Francisco", @province="San Francisco", @state="CA", @street_address="1401 Valencia St", @country_code="US", @country="USA", @all=[#<Geokit::GeoLoc:0x10338bb08 ...>]>
+starting geocoder call for address: 501 Cole St, San Francisco, CA
+Geocode call: #<Geokit::GeoLoc:0x10329d4f8 @lng=-122.450666, @full_address="501 Cole St, San Francisco, CA 94117, USA", @suggested_bounds=#<Geokit::Bounds:0x1031e3260 @sw=#<Geokit::LatLng:0x1031e3198 @lng=-122.4538136, @lat=37.7671284>, @ne=#<Geokit::LatLng:0x1031e30d0 @lng=-122.4475184, @lat=37.7734236>>, @precision="address", @zip="94117", @accuracy=8, @lat=37.770276, @success=true, @provider="google", @city="San Francisco", @province="San Francisco", @state="CA", @street_address="501 Cole St", @country_code="US", @country="USA", @all=[#<Geokit::GeoLoc:0x10329d4f8 ...>]>
+starting geocoder call for address: 150 Church St, San Francisco, CA
+Geocode call: #<Geokit::GeoLoc:0x1031aeee8 @lng=-122.4290676, @full_address="150 Church St, San Francisco, CA 94114, USA", @suggested_bounds=#<Geokit::Bounds:0x1030f4c50 @sw=#<Geokit::LatLng:0x1030f4b88 @lng=-122.4322056, @lat=37.7655151>, @ne=#<Geokit::LatLng:0x1030f4ac0 @lng=-122.4259103, @lat=37.7718103>>, @precision="address", @zip="94114", @accuracy=8, @lat=37.7686621, @success=true, @provider="google", @city="San Francisco", @province="San Francisco", @state="CA", @street_address="150 Church St", @country_code="US", @country="USA", @all=[#<Geokit::GeoLoc:0x1031aeee8 ...>]>
+Completed in 1325ms (View: 3, DB: 0) | 200 OK [http://localhost/sandbox/lookup_geocodes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-19 22:19:17) [GET]
+Rendering sandbox/show_google_map
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-04-19 22:19:41) [GET]
+Rendering sandbox/show_google_map
+Completed in 65ms (View: 5, DB: 0) | 200 OK [http://localhost/sandbox/show_google_map]

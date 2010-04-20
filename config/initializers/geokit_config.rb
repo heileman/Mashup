@@ -22,11 +22,14 @@ if defined? Geokit
 	# See http://developer.yahoo.com/faq/index.html#appid
 	# and http://developer.yahoo.com/maps/rest/V1/geocode.html
 	Geokit::Geocoders::yahoo = 'xpKzWpjV34G.1Z9NXAFmjz9_33d3K2NGLd7zA6rbfMYN4x4RaS_cbUC4wJQRq5n79X.Z'
-    
+  
 	# This is your Google Maps geocoder key. 
 	# See http://www.google.com/apis/maps/signup.html
 	# and http://www.google.com/apis/maps/documentation/#Geocoding_Examples
-	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA'
+  ## Use this one for http://localhost
+	#Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA'
+  ## Use this one for http://smashup.heroku.com
+	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3MQ'
     
 	# This is your username and password for geocoder.us.
 	# To use the free service, the value can be set to nil or false.  For 

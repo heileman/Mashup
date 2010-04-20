@@ -20,7 +20,7 @@
         // it initializes the map, and creates each marker
         function initialize() {
             var map = new GMap(document.getElementById("map"));
-            map.addControl(new GSmallMapControl());
+            map.addControl(new GLargeMapControl());
             map.centerAndZoom(new GPoint(-122.443882, 37.769079), 5);
             
             <% @places.each do |place| %>
