@@ -1,2 +1,24 @@
-<h1>Location Google Map</h1>
-<%= @map.div(:width => 550, :height => 350) %>
+<h1>Listing locations</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Lat</th>
+    <th>Lng</th>
+  </tr>
+
+<% @locations.each do |location| %>
+  <tr>
+    <td><%=h location.address %></td>
+    <td><%=h location.lat %></td>
+    <td><%=h location.lng %></td>
+    <td><%= link_to 'Show', location %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New location', new_location_path %>
