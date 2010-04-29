@@ -5826,3 +5826,59 @@ Processing MashupController#index (for 127.0.0.1 at 2010-04-29 13:29:32) [GET]
 Rendering template within layouts/mashup
 Rendering mashup/index
 Completed in 140ms (View: 8, DB: 11) | 200 OK [http://localhost/mashup/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MashupController#index (for 127.0.0.1 at 2010-04-29 13:46:49) [GET]
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mLocation Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mBluePerson Columns (266.5ms)[0m   [0mSHOW FIELDS FROM `blue_people`[0m
+  [4;36;1mBluePerson Load (0.7ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 1) [0m
+  [4;35;1mBluePerson Load (0.2ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 2) [0m
+  [4;36;1mBluePerson Load (0.2ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 3) [0m
+  [4;35;1mBluePerson Load (0.4ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 4) [0m
+  [4;36;1mBluePerson Load (0.4ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 5) [0m
+  [4;35;1mBluePerson Load (0.4ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 6) [0m
+  [4;36;1mRedPerson Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `red_people`[0m
+  [4;35;1mRedPerson Load (1.4ms)[0m   [0mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 1) [0m
+  [4;36;1mRedPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 2) [0m
+  [4;35;1mRedPerson Load (0.3ms)[0m   [0mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 3) [0m
+  [4;36;1mRedPerson Load (0.2ms)[0m   [0;1mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 4) [0m
+  [4;35;1mRedPerson Load (0.1ms)[0m   [0mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 5) [0m
+Rendering template within layouts/mashup
+Rendering mashup/index
+Completed in 324ms (View: 26, DB: 276) | 200 OK [http://localhost/mashup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-29 13:56:52) [GET]
+
+ActionController::RoutingError (No route matches "/mashpu" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MashupController#index (for 127.0.0.1 at 2010-04-29 13:56:56) [GET]
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mLocation Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mBluePerson Columns (24.8ms)[0m   [0;1mSHOW FIELDS FROM `blue_people`[0m
+  [4;35;1mBluePerson Load (0.4ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 1) [0m
+  [4;36;1mBluePerson Load (0.2ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 2) [0m
+  [4;35;1mBluePerson Load (0.2ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 3) [0m
+  [4;36;1mBluePerson Load (0.1ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 4) [0m
+  [4;35;1mBluePerson Load (0.1ms)[0m   [0mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 5) [0m
+  [4;36;1mBluePerson Load (0.1ms)[0m   [0;1mSELECT * FROM `blue_people` WHERE (`blue_people`.`id` = 6) [0m
+  [4;35;1mRedPerson Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `red_people`[0m
+  [4;36;1mRedPerson Load (1.1ms)[0m   [0;1mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 1) [0m
+  [4;35;1mRedPerson Load (0.1ms)[0m   [0mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 2) [0m
+  [4;36;1mRedPerson Load (0.1ms)[0m   [0;1mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 3) [0m
+  [4;35;1mRedPerson Load (0.2ms)[0m   [0mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 4) [0m
+  [4;36;1mRedPerson Load (0.2ms)[0m   [0;1mSELECT * FROM `red_people` WHERE (`red_people`.`id` = 5) [0m
+Rendering template within layouts/mashup
+Rendering mashup/index
+Completed in 166ms (View: 12, DB: 32) | 200 OK [http://localhost/mashup]
