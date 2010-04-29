@@ -5,7 +5,9 @@
 
 development:
  ## http://localhost
- ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
+ ##ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA
+ ## smashup.heroku.com: 
+ ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3MQ
 
 test:
  ## http://localhost

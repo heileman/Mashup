@@ -27,7 +27,7 @@ if defined? Geokit
 	# See http://www.google.com/apis/maps/signup.html
 	# and http://www.google.com/apis/maps/documentation/#Geocoding_Examples
   ## Use this one for http://localhost
-	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQSkNvectKE82QfJuZ1T7u8-uaeRA'
+	Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3MQ'
   ## Use this one for http://smashup.heroku.com
 	#Geokit::Geocoders::google = 'ABQIAAAAUaquPv3bBMsgh9HfAtjN-RT6YE_9tqAZLEzY2mp7gAPoXxcKYBTgkUj4-rY_DlXTxmE5UlSR6D_3MQ'
     
