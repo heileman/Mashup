@@ -1,0 +1,22 @@
+<h1>Listing red_people</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% @red_people.each do |red_person| %>
+  <tr>
+    <td><%=h red_person.name %></td>
+    <td><%=h red_person.description %></td>
+    <td><%= link_to 'Show', red_person %></td>
+    <td><%= link_to 'Edit', edit_red_person_path(red_person) %></td>
+    <td><%= link_to 'Destroy', red_person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New red_person', new_red_person_path %>

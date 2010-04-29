@@ -1,0 +1,2 @@
+module RedPeopleHelper
+end

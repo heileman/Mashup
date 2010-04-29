@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @blue_person.name %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%=h @blue_person.rank %>
+</p>
+
+<p>
+  <b>Serial number:</b>
+  <%=h @blue_person.serial_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_blue_person_path(@blue_person) %> |
+<%= link_to 'Back', blue_people_path %>

@@ -8,12 +8,24 @@
     <%= f.text_field :address %>
   </p>
   <p>
+    <%= f.label :ip_address %><br />
+    <%= f.text_field :ip_address %>
+  </p>
+  <p>
     <%= f.label :lat %><br />
     <%= f.text_field :lat %>
   </p>
   <p>
     <%= f.label :lng %><br />
     <%= f.text_field :lng %>
+  </p>
+  <p>
+    <%= f.label :locatable_id %><br />
+    <%= f.text_field :locatable_id %>
+  </p>
+  <p>
+    <%= f.label :locatable_type %><br />
+    <%= f.text_field :locatable_type %>
   </p>
   <p>
     <%= f.submit 'Update' %>

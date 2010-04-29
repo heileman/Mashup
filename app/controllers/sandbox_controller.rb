@@ -3,8 +3,6 @@ class SandboxController < ActionController::Base
   include GeoKit::Geocoders
 
   def lookup_geocodes
-    # your list of places. In a real app, this would come from the database,
-    # and have more robust descriptions
     places = [
       {:address=>'555 Irving, San Francisco, CA',:description=>'Irving'},
       {:address=>'1401 Valencia St, San Francisco, CA',:description=>'Valencia'},

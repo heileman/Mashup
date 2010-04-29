@@ -9,12 +9,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100423031832) do
+ActiveRecord::Schema.define(:version => 20100428174902) do
+
+  create_table "blue_people", :force => true do |t|
+    t.string   "name"
+    t.string   "rank"
+    t.integer  "serial_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "locations", :force => true do |t|
     t.string   "address"
+    t.string   "ip_address"
     t.float    "lat"
     t.float    "lng"
+    t.integer  "locatable_id"
+    t.string   "locatable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "red_people", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

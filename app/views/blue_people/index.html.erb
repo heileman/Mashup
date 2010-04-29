@@ -1,0 +1,24 @@
+<h1>Listing blue_people</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Rank</th>
+    <th>Serial number</th>
+  </tr>
+
+<% @blue_people.each do |blue_person| %>
+  <tr>
+    <td><%=h blue_person.name %></td>
+    <td><%=h blue_person.rank %></td>
+    <td><%=h blue_person.serial_number %></td>
+    <td><%= link_to 'Show', blue_person %></td>
+    <td><%= link_to 'Edit', edit_blue_person_path(blue_person) %></td>
+    <td><%= link_to 'Destroy', blue_person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New blue_person', new_blue_person_path %>

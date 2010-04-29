@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @red_person.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @red_person.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_red_person_path(@red_person) %> |
+<%= link_to 'Back', red_people_path %>

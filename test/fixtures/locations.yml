@@ -2,10 +2,16 @@
 
 one:
   address: MyString
+  ip_address: MyString
   lat: 1.5
   lng: 1.5
+  locatable_id: 1
+  locatable_type: MyString
 
 two:
   address: MyString
+  ip_address: MyString
   lat: 1.5
   lng: 1.5
+  locatable_id: 1
+  locatable_type: MyString

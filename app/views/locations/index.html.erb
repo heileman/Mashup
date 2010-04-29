@@ -3,15 +3,21 @@
 <table>
   <tr>
     <th>Address</th>
+    <th>Ip address</th>
     <th>Lat</th>
     <th>Lng</th>
+    <th>Locatable</th>
+    <th>Locatable type</th>
   </tr>
 
 <% @locations.each do |location| %>
   <tr>
     <td><%=h location.address %></td>
+    <td><%=h location.ip_address %></td>
     <td><%=h location.lat %></td>
     <td><%=h location.lng %></td>
+    <td><%=h location.locatable_id %></td>
+    <td><%=h location.locatable_type %></td>
     <td><%= link_to 'Show', location %></td>
     <td><%= link_to 'Edit', edit_location_path(location) %></td>
     <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>

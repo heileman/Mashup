@@ -1,5 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :red_people
+
+  map.resources :blue_people
+
   map.resources :locations
+
+  map.resources :red_people
+  
+  map.resources :mashup
 
   # The priority is based upon order of creation: first created -> highest priority.
 
