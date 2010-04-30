@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :red_people
   
-  map.resources :mashup
+  map.resources :mashup_sandbox
 
   # The priority is based upon order of creation: first created -> highest priority.
 

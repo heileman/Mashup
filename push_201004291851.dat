@@ -1,0 +1,1 @@
+{"completed_tables":[],"local_tables_info":{"blue_people":6,"locations":11,"red_people":5,"schema_migrations":4},"klass":"Taps::Push","remote_url":"http://heroku:osui59a24am79x@taps3.heroku.com","session_uri":"/sessions/3720069073","database_url":"mysql://mashup:secret!@localhost/mashup_development?encoding=utf8","table_filter":null,"stream_state":{}}
