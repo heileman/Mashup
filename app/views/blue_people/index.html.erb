@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+	<th>id</th>
     <th>Rank</th>
     <th>Serial number</th>
   </tr>
@@ -10,6 +11,7 @@
 <% @blue_people.each do |blue_person| %>
   <tr>
     <td><%=h blue_person.name %></td>
+    <td><%=h blue_person.id %></td>
     <td><%=h blue_person.rank %></td>
     <td><%=h blue_person.serial_number %></td>
     <td><%= link_to 'Show', blue_person %></td>

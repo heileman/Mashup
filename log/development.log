@@ -9062,3 +9062,25 @@ Google geocoding. Address: 900 Cam del Rio NW, Albuquerque, NM. Result: <?xml ve
 Rendering template within layouts/mashup_sandbox
 Rendering mashup_sandbox/index
 Completed in 3766ms (View: 5, DB: 420) | 200 OK [http://localhost/mashup_sandbox/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedPeopleController#index (for 127.0.0.1 at 2010-04-29 23:09:19) [GET]
+  [4;35;1mRedPerson Load (0.4ms)[0m   [0mSELECT * FROM `red_people` [0m
+Rendering template within layouts/red_people
+Rendering red_people/index
+  [4;36;1mRedPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `red_people`[0m
+Completed in 26ms (View: 14, DB: 2) | 200 OK [http://localhost/red_people]
+  [4;35;1mLocation Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BluePeopleController#index (for 127.0.0.1 at 2010-04-29 23:13:41) [GET]
+  [4;36;1mBluePerson Load (0.4ms)[0m   [0;1mSELECT * FROM `blue_people` [0m
+Rendering template within layouts/blue_people
+Rendering blue_people/index
+  [4;35;1mBluePerson Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `blue_people`[0m
+Completed in 59ms (View: 48, DB: 2) | 200 OK [http://localhost/blue_people]
+  [4;36;1mLocation Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m

@@ -3,12 +3,14 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>id</th>
     <th>Description</th>
   </tr>
 
 <% @red_people.each do |red_person| %>
   <tr>
     <td><%=h red_person.name %></td>
+    <td><%=h red_person.id %></td>
     <td><%=h red_person.description %></td>
     <td><%= link_to 'Show', red_person %></td>
     <td><%= link_to 'Edit', edit_red_person_path(red_person) %></td>
